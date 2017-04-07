@@ -15,10 +15,12 @@
     <!-- Bootstrap Core CSS -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
@@ -32,44 +34,44 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">GUYD | Where Relationships Grow</a>
+        <a class="navbar-brand" href="#"><img src="GUYDlogo.gif" class="img-responsive navlogo" alt="Responsive image"> GUYD | Where Relationships Grow</a>
         <div class="collapse navbar-collapse" id="navbarExample">
+        <!-- Left side menu items -->
             <ul class="sidebar-nav navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-fw fa-area-chart"></i> Graphs</a>
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-users"></i> Groups</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-fw fa-cogs"></i> Widgets</a>
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-star"></i> Favorites</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExample"><i class="fa fa-fw fa-sitemap"></i> Menu Levels</a>
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-user-circle"></i> Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-bell"></i> Reminders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExample"><i class="fa fa-fw fa-cogs"></i> Settings</a>
                     <ul class="sidebar-second-level collapse" id="collapseExample">
                         <li>
-                            <a href="#">Second Level Item</a>
+                            <a href="#">- Profile</a>
                         </li>
                         <li>
-                            <a href="#">Second Level Item</a>
+                            <a href="#">- Notifications</a>
                         </li>
                         <li>
-                            <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExample2">Third Level</a>
-                            <ul class="sidebar-third-level collapse" id="collapseExample2">
-                                <li>
-                                    <a href="#">Third Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level Item</a>
-                                </li>
-                            </ul>
+                            <a href="#">- Help</a>
                         </li>
                     </ul>
                 </li>
             </ul>
+            <!-- Top menu items -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle mr-lg-2" href="#" id="messagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -105,23 +107,13 @@
                         <span class="new-indicator text-warning hidden-md-down"><i class="fa fa-fw fa-circle"></i><span class="number">6</span></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="alertsDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Read New</a>
+                        <a class="dropdown-item" href="#">Clear All</a>
                     </div>
                 </li>
+               
                 <li class="nav-item">
-                    <form class="form-inline my-2 my-lg-0 mr-lg-2">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
-                    </span>
-                        </div>
-                    </form>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa fa-fw fa-sign-out"></i> Logout</a>
+                    <a class="nav-link" href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a>
                 </li>
             </ul>
         </div>
@@ -130,39 +122,22 @@
     <div class="container-fluid">
 
         <ol class="breadcrumb my-3">
-            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-            <li class="breadcrumb-item active">My Dashboard</li>
+            <li class="breadcrumb-item">Dashboard</a></li>
         </ol>
-
+        <!-- Top cards -->
         <div class="row">
-            <div class="col-xl-3 col-sm-6 mb-3">
-                <div class="card card-inverse card-primary o-hidden h-100">
-                    <div class="card-block">
-                        <div class="card-block-icon">
-                            <i class="fa fa-fw fa-comments"></i>
-                        </div>
-                        <div class="mr-5">
-                            26 New Messages!
-                        </div>
-                    </div>
-                    <a href="#" class="card-footer clearfix small z-1">
-                        <span class="float-left">View Details</span>
-                        <span class="float-right"><i class="fa fa-angle-right"></i></span>
-                    </a>
-                </div>
-            </div>
             <div class="col-xl-3 col-sm-6 mb-3">
                 <div class="card card-inverse card-success o-hidden h-100">
                     <div class="card-block">
                         <div class="card-block-icon">
-                            <i class="fa fa-fw fa-list"></i>
+                            <i class="fa fa-fw fa-thumbs-up"></i>
                         </div>
                         <div class="mr-5">
-                            11 New Tasks!
+                            26 Improved Contacts!
                         </div>
                     </div>
                     <a href="#" class="card-footer clearfix small z-1">
-                        <span class="float-left">View Details</span>
+                        <span class="float-left">View Contacts</span>
                         <span class="float-right"><i class="fa fa-angle-right"></i></span>
                     </a>
                 </div>
@@ -171,14 +146,30 @@
                 <div class="card card-inverse card-warning o-hidden h-100">
                     <div class="card-block">
                         <div class="card-block-icon">
-                            <i class="fa fa-fw fa-shopping-cart"></i>
+                            <i class="fa fa-fw fa-calendar"></i>
                         </div>
                         <div class="mr-5">
-                            123 New Orders!
+                            11 New Events!
                         </div>
                     </div>
                     <a href="#" class="card-footer clearfix small z-1">
-                        <span class="float-left">View Details</span>
+                        <span class="float-left">View Calendar</span>
+                        <span class="float-right"><i class="fa fa-angle-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-3">
+                <div class="card card-inverse card-primary o-hidden h-100">
+                    <div class="card-block">
+                        <div class="card-block-icon">
+                            <i class="fa fa-fw fa-shopping-cart"></i>
+                        </div>
+                        <div class="mr-5">
+                            13 New Contacts!
+                        </div>
+                    </div>
+                    <a href="#" class="card-footer clearfix small z-1">
+                        <span class="float-left">View Contacts</span>
                         <span class="float-right"><i class="fa fa-angle-right"></i></span>
                     </a>
                 </div>
@@ -190,27 +181,151 @@
                             <i class="fa fa-fw fa-support"></i>
                         </div>
                         <div class="mr-5">
-                            13 New Tickets!
+                            13 At-Risk Contacts!
                         </div>
                     </div>
                     <a href="#" class="card-footer clearfix small z-1">
-                        <span class="float-left">View Details</span>
+                        <span class="float-left">View At-Risk</span>
                         <span class="float-right"><i class="fa fa-angle-right"></i></span>
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- Area Chart Example -->
-        <div class="card mb-3">
-            <div class="card-header">
-                <i class="fa fa-bar-chart"></i> Area Chart Example
+        <!-- Cards -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Donut Chart</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="morris-donut-chart"></div>
+                        <div class="text-right">
+                            <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-block">
-                <canvas id="myChart" width="100%" height="30"></canvas>
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Tasks Panel</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                <span class="badge">just now</span>
+                                <i class="fa fa-fw fa-calendar"></i> Calendar updated
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <span class="badge">4 minutes ago</span>
+                                <i class="fa fa-fw fa-comment"></i> Commented on a post
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <span class="badge">23 minutes ago</span>
+                                <i class="fa fa-fw fa-truck"></i> Order 392 shipped
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <span class="badge">46 minutes ago</span>
+                                <i class="fa fa-fw fa-money"></i> Invoice 653 has been paid
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <span class="badge">1 hour ago</span>
+                                <i class="fa fa-fw fa-user"></i> A new user has been added
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <span class="badge">2 hours ago</span>
+                                <i class="fa fa-fw fa-check"></i> Completed task: "pick up dry cleaning"
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <span class="badge">yesterday</span>
+                                <i class="fa fa-fw fa-globe"></i> Saved the world
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <span class="badge">two days ago</span>
+                                <i class="fa fa-fw fa-check"></i> Completed task: "fix error on sales page"
+                            </a>
+                        </div>
+                        <div class="text-right">
+                            <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-footer text-muted">
-                <small>2 Days Ago</small>
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Order #</th>
+                                        <th>Order Date</th>
+                                        <th>Order Time</th>
+                                        <th>Amount (USD)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>3326</td>
+                                        <td>10/21/2013</td>
+                                        <td>3:29 PM</td>
+                                        <td>$321.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3325</td>
+                                        <td>10/21/2013</td>
+                                        <td>3:20 PM</td>
+                                        <td>$234.34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3324</td>
+                                        <td>10/21/2013</td>
+                                        <td>3:03 PM</td>
+                                        <td>$724.17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3323</td>
+                                        <td>10/21/2013</td>
+                                        <td>3:00 PM</td>
+                                        <td>$23.71</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3322</td>
+                                        <td>10/21/2013</td>
+                                        <td>2:49 PM</td>
+                                        <td>$8345.23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3321</td>
+                                        <td>10/21/2013</td>
+                                        <td>2:23 PM</td>
+                                        <td>$245.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3320</td>
+                                        <td>10/21/2013</td>
+                                        <td>2:15 PM</td>
+                                        <td>$5663.54</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3319</td>
+                                        <td>10/21/2013</td>
+                                        <td>2:13 PM</td>
+                                        <td>$943.45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-right">
+                            <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -240,6 +355,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/morris/raphael.min.js"></script>
+    <script src="js/morris/morris.min.js"></script>
+    <script src="js/morris/morris-data.js"></script>
 
     <!-- Chart.js -->
     <script src="lib/chart.js/Chart.min.js"></script>
